@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".fragments.Lectures">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lectureRcv"
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            tools:listitem="@layout/element_lectures"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</layout>

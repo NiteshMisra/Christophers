@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        tools:context=".activity.BlogDetail">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:background="#F0F0F0"
+                    android:layout_height="170dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Blogs"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="3 months ago"
+                    android:textSize="12sp"
+                    android:textColor="#BFBFBF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Philosophy - The Elixir Of Life"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#535353"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:text="Man, being a conscious creature , lives his life not only to survive on the earth but to make the best of his self- developed or self-experienced concept, giving rise to civilisation and culture, custom and tradition , habits and manners , morals and ideologies , religion and community. This concept which man develops consiously or un consiously for himself gives the basic foundation to his life as a theory of the world and the individuals and ann art of living social and national life even on discordant notes, and thus shaping his whole attitude his life, it gives experesion to the whole animated world. This concept is nothing but the philosophy of life without which Man is none but a frog lying deep in the mud. Hence we can say that each and every man whether educated and uneducated, has his own philosophy based either on his personal experiences or on one borrowed from others. But to live life in totality Man need a philosophy bbased on universal experiences, leading him from the finite to the infinite."
+                    android:textSize="13sp"
+                    android:textColor="#8A8A8A"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/continueReading"
+                    android:layout_width="wrap_content"
+                    android:text="Continue Reading +"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/border_bg"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="13dp"
+                        android:src="@drawable/ic_favorite_borde"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/viewBackGroundLine"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="13dp"
+                        android:src="@drawable/ic_favorite_borde"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/viewBackGroundLine"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="13dp"
+                        android:src="@drawable/ic_favorite_borde"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/viewBackGroundLine"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="13dp"
+                        android:src="@drawable/ic_favorite_borde"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>

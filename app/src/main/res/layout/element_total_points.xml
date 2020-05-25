@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <carbon.widget.RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        app:carbon_cornerRadius="10dp"
+        app:carbon_elevation="10dp"
+        app:carbon_elevationShadowColor="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_receipt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="25dp"
+            android:layout_toStartOf="@id/points"
+            android:layout_toEndOf="@id/image"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invite Friends"
+                android:textColor="#616161"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Earn upto 50 points /friend when the invited friends complete the tasks"
+                android:textColor="#787878"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="+50"
+            android:textColor="#424242"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </carbon.widget.RelativeLayout>
+
+</carbon.widget.LinearLayout>

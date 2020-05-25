@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        tools:context=".fragments.Practice">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/practiceRcv"
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            tools:listitem="@layout/element_practice"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</layout>

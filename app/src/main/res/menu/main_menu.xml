@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item android:id="@+id/nav_main_notify"
+            android:title="Notifications"/>
+
+        <item android:id="@+id/nav_bookMarks"
+            android:title="Bookmarks"/>
+
+        <item android:id="@+id/nav_gallery"
+            android:title="Gallery"/>
+
+        <item android:id="@+id/nav_testimonials"
+            android:title="Testimonials"/>
+
+        <item android:id="@+id/nav_purchasedItems"
+            android:title="Purchased Items"/>
+
+        <item android:id="@+id/nav_myDownloads"
+            android:title="My Downloads"/>
+
+        <item android:id="@+id/nav_rainDrop"
+            android:title="Rain Drop Publications"/>
+
+    </group>
+
+    <group>
+
+        <item android:id="@+id/nav_share"
+            android:title="Share this app"/>
+
+        <item android:id="@+id/nav_about_us"
+            android:title="About Us"/>
+
+        <item android:id="@+id/nav_contactUs"
+            android:title="Contact Us"/>
+
+        <item android:id="@+id/tAndS"
+            android:title="T &amp; S"/>
+
+        <item android:id="@+id/nav_privacy"
+            android:title="Privacy Policy"/>
+
+        <item android:id="@+id/nav_LogOut"
+            android:title="Logout"/>
+
+    </group>
+
+</menu>

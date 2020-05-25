@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".activity.StoreDetail">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="CGL (Pre. 2019 (121 Tests)"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"/>
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@id/title"
+           android:background="@drawable/background"
+           android:overScrollMode="never">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <carbon.widget.LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <carbon.widget.RelativeLayout
+                       android:layout_width="match_parent"
+                       android:paddingTop="20dp"
+                       android:background="@color/colorWhite"
+                       android:layout_marginBottom="10dp"
+                       android:paddingBottom="20dp"
+                       android:layout_marginTop="35dp"
+                       app:carbon_elevation="10dp"
+                       app:carbon_elevationShadowColor="@color/colorBlack"
+                       app:carbon_cornerRadius="10dp"
+                       android:layout_marginStart="20dp"
+                       android:layout_marginEnd="20dp"
+                       android:paddingStart="15dp"
+                       android:paddingEnd="15dp"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:text="2 Months"
+                           android:layout_marginStart="5dp"
+                           android:textSize="12sp"
+                           android:textStyle="bold"
+                           android:alpha="6"
+                           android:layout_alignParentStart="true"
+                           android:textColor="@color/colorBlack"
+                           android:layout_height="wrap_content"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:text="\u20b9 200.00"
+                           android:layout_marginEnd="5dp"
+                           android:textSize="12sp"
+                           android:textStyle="bold"
+                           android:alpha="6"
+                           android:layout_alignParentEnd="true"
+                           android:textColor="@color/colorBlack"
+                           android:layout_height="wrap_content"/>
+
+                   </carbon.widget.RelativeLayout>
+
+               </carbon.widget.LinearLayout>
+
+               <carbon.widget.LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <carbon.widget.LinearLayout
+                       android:layout_width="match_parent"
+                       android:background="@color/colorWhite"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginTop="15dp"
+                       app:carbon_elevation="10dp"
+                       app:carbon_elevationShadowColor="@color/colorBlack"
+                       app:carbon_cornerRadius="10dp"
+                       android:layout_marginStart="20dp"
+                       android:orientation="vertical"
+                       android:layout_marginEnd="20dp"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:text="CGL (Pre) 2019 (121 Tests) - Order Summary"
+                           android:paddingEnd="100dp"
+                           android:paddingStart="20dp"
+                           android:textSize="13sp"
+                           android:padding="15dp"
+                           android:background="#F0F0F0"
+                           android:textColor="@color/colorBlack"
+                           android:layout_height="wrap_content"/>
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:padding="15dp"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="Original"
+                               android:layout_marginStart="5dp"
+                               android:textSize="11sp"
+                               android:layout_alignParentStart="true"
+                               android:textColor="#838383"
+                               android:layout_height="wrap_content"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="\u20b9 200.00"
+                               android:layout_marginEnd="5dp"
+                               android:textSize="12sp"
+                               android:textStyle="bold"
+                               android:alpha="6"
+                               android:layout_alignParentEnd="true"
+                               android:textColor="@color/colorBlack"
+                               android:layout_height="wrap_content"/>
+
+                       </RelativeLayout>
+
+                       <View
+                           android:layout_width="match_parent"
+                           android:background="#CDCDCD"
+                           android:layout_height="1dp"/>
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:padding="15dp"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="GST (18%)"
+                               android:layout_marginStart="5dp"
+                               android:textSize="11sp"
+                               android:layout_alignParentStart="true"
+                               android:textColor="#838383"
+                               android:layout_height="wrap_content"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="+ \u20b9 36.00"
+                               android:layout_marginEnd="5dp"
+                               android:textSize="12sp"
+                               android:textStyle="bold"
+                               android:alpha="6"
+                               android:layout_alignParentEnd="true"
+                               android:textColor="@color/colorBlack"
+                               android:layout_height="wrap_content"/>
+
+                       </RelativeLayout>
+
+                       <View
+                           android:layout_width="match_parent"
+                           android:background="#CDCDCD"
+                           android:layout_height="1dp"/>
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:padding="15dp"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="You Pay"
+                               android:layout_marginStart="5dp"
+                               android:textSize="11sp"
+                               android:layout_alignParentStart="true"
+                               android:textColor="#838383"
+                               android:layout_height="wrap_content"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="2 Months"
+                               android:layout_toStartOf="@id/total"
+                               android:layout_marginEnd="15dp"
+                               android:textSize="13sp"
+                               android:textColor="#6C6C6C"
+                               android:layout_height="wrap_content"/>
+
+                           <TextView
+                               android:id="@+id/total"
+                               android:layout_width="wrap_content"
+                               android:text="\u20b9 236.00"
+                               android:layout_marginEnd="5dp"
+                               android:textSize="12sp"
+                               android:textStyle="bold"
+                               android:alpha="6"
+                               android:layout_alignParentEnd="true"
+                               android:textColor="@color/colorBlack"
+                               android:layout_height="wrap_content"/>
+
+                       </RelativeLayout>
+
+                   </carbon.widget.LinearLayout>
+
+               </carbon.widget.LinearLayout>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_marginStart="25dp"
+                   android:layout_marginEnd="25dp"
+                   android:layout_marginTop="30dp"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:text="You Pay"
+                           android:layout_marginStart="5dp"
+                           android:textSize="12sp"
+                           android:textColor="#838383"
+                           android:layout_height="wrap_content"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:text="\u20b9 236.00"
+                           android:layout_marginEnd="5dp"
+                           android:textSize="12sp"
+                           android:textStyle="bold"
+                           android:alpha="6"
+                           android:textColor="@color/colorBlack"
+                           android:layout_height="wrap_content"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_alignParentEnd="true"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:text="2 Months, CGL (Pre.) 2019"
+                           android:layout_marginStart="5dp"
+                           android:textSize="12sp"
+                           android:textColor="#838383"
+                           android:layout_height="wrap_content"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:text="(121 Tests)"
+                           android:layout_marginStart="5dp"
+                           android:textSize="12sp"
+                           android:layout_gravity="end"
+                           android:textColor="#838383"
+                           android:layout_height="wrap_content"/>
+
+                   </LinearLayout>
+
+               </RelativeLayout>
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="match_parent"
+                   style="@style/Widget.MaterialComponents.Button"
+                   android:padding="12dp"
+                   app:cornerRadius="20dp"
+                   android:layout_marginTop="15dp"
+                   android:text="Buy Now"
+                   android:textSize="14sp"
+                   android:textColor="@color/colorWhite"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                   android:textStyle="bold"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginEnd="20dp"
+                   android:layout_height="wrap_content"/>
+
+               <carbon.widget.LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <carbon.widget.LinearLayout
+                       android:layout_width="match_parent"
+                       android:background="@color/colorWhite"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginTop="30dp"
+                       app:carbon_elevation="10dp"
+                       app:carbon_elevationShadowColor="@color/colorBlack"
+                       app:carbon_cornerRadius="10dp"
+                       android:layout_marginStart="20dp"
+                       android:orientation="vertical"
+                       android:layout_marginEnd="20dp"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:text="CGL (Pre) 2019 (121 Tests) - Details"
+                           android:textSize="13sp"
+                           android:padding="15dp"
+                           android:background="#F0F0F0"
+                           android:textColor="@color/colorBlack"
+                           android:layout_height="wrap_content"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:text="Details"
+                           android:padding="15dp"
+                           android:layout_marginStart="5dp"
+                           android:textSize="13sp"
+                           android:layout_alignParentStart="true"
+                           android:textColor="#838383"
+                           android:layout_height="wrap_content"/>
+
+                   </carbon.widget.LinearLayout>
+
+               </carbon.widget.LinearLayout>
+
+           </LinearLayout>
+
+       </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</layout>
